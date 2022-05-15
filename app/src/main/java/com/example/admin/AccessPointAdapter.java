@@ -38,9 +38,11 @@ public class AccessPointAdapter extends RecyclerView.Adapter {
         String ssid = "SSID : " + accessPoints.get(position).getSsid();
         String bSsid = "BSSID : " + accessPoints.get(position).getBssid();
         String rssi = "RSSI : " + accessPoints.get(position).getRssi();
+        String altitude = "Altitude: 추가 예정";
         binding.ssidTextView.setText(ssid);
         binding.bssidTextView.setText(bSsid);
         binding.rssiLevelTextView.setText(rssi);
+        binding.altitudeTextView.setText(altitude);
 
     }
 
